@@ -53,6 +53,11 @@
 </div>
 
 <script>
+
+if (window.location.pathname !== "/") {
+  window.location.href = '/';
+}
+
 var countdown = document.getElementById('countdown');
 var redirect = document.getElementById('redirect');
 var seconds = 10;
